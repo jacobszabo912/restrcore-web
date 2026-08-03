@@ -4,11 +4,505 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RestrCore — Restaurant Management, Reimagined</title>
+  <meta name="description" content="All-in-one POS, labour, inventory, purchasing and financial reporting platform built for Canadian independent restaurants." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<script src="script.js"></script>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Restr<span>Core</span></a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#consulting">Consulting</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Get Early Access</a>
+      </div>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#consulting">Consulting</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn btn-primary">Get Early Access</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-badge">Built for Canadian Independent Restaurants</div>
+      <h1 class="hero-title">Restaurant Management,<br /><span class="gradient-text">Reimagined.</span></h1>
+      <p class="hero-sub">One platform for POS, labour, inventory, purchasing and financial reporting — built by operators who have stood behind the line, managed the books, and lived the chaos.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">Request Early Access</a>
+        <a href="#features" class="btn btn-ghost btn-lg">See What's Inside</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">All-in-One</span><span class="stat-label">Single Platform</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">Local-First</span><span class="stat-label">Works Offline</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">20+ Years</span><span class="stat-label">Industry Experience</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">No Hidden Fees</span><span class="stat-label">Flat Monthly Rate</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem-strip">
+    <div class="container">
+      <p class="problem-text">Tired of juggling <strong>5 different systems</strong> that do not talk to each other, paying <strong>per-transaction fees</strong> that eat into your margins, and losing hours to <strong>manual reports</strong> that should take minutes?</p>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">The Full System</div>
+        <h2 class="section-title">Everything You Need.<br />Nothing You Don't.</h2>
+        <p class="section-sub">RestrCore replaces every disconnected tool with one unified platform built specifically for the restaurant industry.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card feature-card--highlight">
+          <div class="feature-icon">🖥</div>
+          <h3>Point of Sale</h3>
+          <p>Fast, touch-first POS designed for iPad. Seat-based ordering, choice groups, happy hour pricing, modifiers, split checks, and offline payment support.</p>
+          <ul class="feature-list">
+            <li>Seat-based ordering and ticket management</li>
+            <li>Choice groups with upcharge support</li>
+            <li>Happy hour automation</li>
+            <li>Offline tender with reconciliation</li>
+            <li>Manager PIN authorization</li>
+            <li>KDS integration</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Labour Management</h3>
+          <p>Clock in/out, scheduling, payroll prep and AGC tracking — all linked to your revenue data for meaningful labour cost analysis.</p>
+          <ul class="feature-list">
+            <li>Digital timeclock</li>
+            <li>Shift scheduling</li>
+            <li>Labour vs revenue reporting</li>
+            <li>AGC by revenue category</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Inventory Management</h3>
+          <p>Daily, weekly and monthly counting sessions with waste logging, recipe costing and actual vs theoretical reporting.</p>
+          <ul class="feature-list">
+            <li>Multi-session counting</li>
+            <li>Waste log tracking</li>
+            <li>Recipe costing</li>
+            <li>A vs T variance reports</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧾</div>
+          <h3>Purchasing and Invoicing</h3>
+          <p>Scan vendor invoices from Sysco, LCBO, Beer Store and produce suppliers. Auto-match line items and track purchasing by vendor.</p>
+          <ul class="feature-list">
+            <li>PDF invoice scanning</li>
+            <li>Learned item matching</li>
+            <li>Multi-vendor support</li>
+            <li>Purchase history tracking</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Financial Reporting</h3>
+          <p>Revenue 606, P&L accounts, daily summaries and multi-period comparisons structured the way accountants and operators need them.</p>
+          <ul class="feature-list">
+            <li>Revenue 606 reporting</li>
+            <li>P&L account tracking</li>
+            <li>Daily and period summaries</li>
+            <li>Multi-location consolidation</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏢</div>
+          <h3>Multi-Location</h3>
+          <p>Manage multiple locations from one dashboard. Compare performance, consolidate reports and push menu changes across your group.</p>
+          <ul class="feature-list">
+            <li>Cross-location dashboard</li>
+            <li>Consolidated reporting</li>
+            <li>Menu sync across locations</li>
+            <li>Role-based access control</li>
+          </ul>
+        </div>
+      </div>
+      <div class="local-first-card">
+        <div class="local-first-content">
+          <div class="local-first-icon">⚡</div>
+          <div>
+            <h3>Local-First Architecture</h3>
+            <p>Your POS, floor plan, KDS and timeclock run on hardware inside your restaurant — not in a data centre. That means lightning-fast response times and <strong>zero dependency on the internet</strong> for your core operations. If your connection goes down on a Saturday night, your POS keeps running.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge section-badge--light">Simple Pricing</div>
+        <h2 class="section-title section-title--light">One Flat Rate.<br />No Surprises.</h2>
+        <p class="section-sub section-sub--light">No per-transaction fees. No hidden add-ons. No contracts that trap you. Just one monthly rate that includes everything.</p>
+      </div>
+      <div class="pricing-toggle">
+        <span class="toggle-label active" id="toggleMonthly">Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="billingToggle" />
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="toggle-label" id="toggleAnnual">Annual <span class="save-badge">Save 2 months</span></span>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-name">Starter</div>
+          <div class="pricing-desc">Perfect for single-location restaurants getting started with a modern system.</div>
+          <div class="pricing-price">
+            <span class="price-amount" data-monthly="399" data-annual="332">$399</span>
+            <span class="price-period">/mo per location</span>
+          </div>
+          <div class="pricing-annual-note" id="starterAnnualNote" style="display:none">Billed as $3,990/yr — save $798</div>
+          <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+          <div class="pricing-features">
+            <div class="pf-group">Full RestrCore System</div>
+            <div class="pf-item">✓ Up to 2 POS Stations</div>
+            <div class="pf-item">✓ Floor and Reservations</div>
+            <div class="pf-item">✓ KDS <span class="pf-note">(add-on)</span></div>
+            <div class="pf-item">✓ Timeclock and Labour</div>
+            <div class="pf-item">✓ Inventory Management</div>
+            <div class="pf-item">✓ Purchasing and Invoicing</div>
+            <div class="pf-item">✓ Financial Reporting</div>
+            <div class="pf-item">✓ Online Ordering</div>
+            <div class="pf-item">✓ 3 Training Sessions</div>
+            <div class="pf-item">✓ Support Included</div>
+            <div class="pf-item">✓ Single Location</div>
+          </div>
+          <div class="pricing-addons">
+            <div class="addon-title">Available Add-ons</div>
+            <div class="addon-item">Extra POS Station — $59/mo</div>
+            <div class="addon-item">KDS Screen — $39/mo</div>
+            <div class="addon-item">Loyalty Program — $39/mo</div>
+            <div class="addon-item">Gift Cards — $29/mo</div>
+          </div>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-name">Pro</div>
+          <div class="pricing-desc">For growing independents and multi-location operators who need the full picture.</div>
+          <div class="pricing-price">
+            <span class="price-amount" data-monthly="549" data-annual="457">$549</span>
+            <span class="price-period">/mo per location</span>
+          </div>
+          <div class="pricing-annual-note" id="proAnnualNote" style="display:none">Billed as $5,490/yr — save $1,098</div>
+          <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+          <div class="pricing-features">
+            <div class="pf-group">Everything in Starter, plus:</div>
+            <div class="pf-item">✓ Up to 4 POS Stations</div>
+            <div class="pf-item">✓ KDS Included</div>
+            <div class="pf-item">✓ Multi-Location Management</div>
+            <div class="pf-item">✓ Loyalty Program</div>
+            <div class="pf-item">✓ Gift Cards</div>
+            <div class="pf-item">✓ Unlimited Training</div>
+            <div class="pf-item">✓ Priority Support</div>
+            <div class="pf-item">✓ Advanced Analytics</div>
+            <div class="pf-item">✓ Online Ordering</div>
+          </div>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-name">Enterprise</div>
+          <div class="pricing-desc">Custom solutions for restaurant groups, franchises and multi-concept operators.</div>
+          <div class="pricing-price">
+            <span class="price-amount" style="font-size:2rem">Custom</span>
+          </div>
+          <a href="#contact" class="btn btn-outline btn-full">Let's Talk</a>
+          <div class="pricing-features">
+            <div class="pf-group">Everything in Pro, plus:</div>
+            <div class="pf-item">✓ Unlimited Locations</div>
+            <div class="pf-item">✓ Custom POS Station Count</div>
+            <div class="pf-item">✓ Dedicated Account Manager</div>
+            <div class="pf-item">✓ Custom Integrations</div>
+            <div class="pf-item">✓ SLA Support</div>
+            <div class="pf-item">✓ On-site Training</div>
+            <div class="pf-item">✓ Priority Development</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hardware-section">
+        <h3 class="hardware-title">Hardware Bundles</h3>
+        <p class="hardware-sub">Everything you need, out of the box. Choose how you want to pay.</p>
+        <div class="hardware-grid">
+          <div class="hardware-card">
+            <div class="hw-name">Starter Bundle</div>
+            <div class="hw-items">
+              <div class="hw-item">✓ Local backup server</div>
+              <div class="hw-item">✓ Office computer and printer</div>
+              <div class="hw-item">✓ 1x POS terminal</div>
+              <div class="hw-item">✓ 1x Debit terminal</div>
+              <div class="hw-item">✓ 1x Receipt printer</div>
+              <div class="hw-item">✓ Cash drawer</div>
+              <div class="hw-item">✓ Network switch and all cables</div>
+            </div>
+            <div class="hw-pricing">
+              <div class="hw-option"><span class="hw-label">Buy Outright</span><span class="hw-price">$7,149</span></div>
+              <div class="hw-note">Includes 1 free replacement per piece</div>
+              <div class="hw-option"><span class="hw-label">Pay to Own</span><span class="hw-price">$199/mo</span></div>
+              <div class="hw-note">36-month term</div>
+              <div class="hw-option"><span class="hw-label">Lease</span><span class="hw-price">$299/mo</span></div>
+            </div>
+          </div>
+          <div class="hardware-card hardware-card--featured">
+            <div class="hw-badge">Recommended</div>
+            <div class="hw-name">Pro Bundle</div>
+            <div class="hw-items">
+              <div class="hw-item">✓ Local backup server</div>
+              <div class="hw-item">✓ Office computer and printer</div>
+              <div class="hw-item">✓ 4x POS terminals</div>
+              <div class="hw-item">✓ 4x Debit terminals</div>
+              <div class="hw-item">✓ 4x Receipt printers</div>
+              <div class="hw-item">✓ 6x KDS screens</div>
+              <div class="hw-item">✓ Bar printer</div>
+              <div class="hw-item">✓ Network switch and all cables</div>
+            </div>
+            <div class="hw-pricing">
+              <div class="hw-option"><span class="hw-label">Buy Outright</span><span class="hw-price">$24,050</span></div>
+              <div class="hw-note">Includes 1 free replacement per piece</div>
+              <div class="hw-option"><span class="hw-label">Pay to Own</span><span class="hw-price">$649/mo</span></div>
+              <div class="hw-note">36-month term</div>
+              <div class="hw-option"><span class="hw-label">Lease</span><span class="hw-price">$899/mo</span></div>
+            </div>
+          </div>
+          <div class="hardware-card">
+            <div class="hw-name">Enterprise Bundle</div>
+            <div class="hw-items">
+              <div class="hw-item">✓ Everything in Pro</div>
+              <div class="hw-item">✓ Per-location configuration</div>
+              <div class="hw-item">✓ Custom station count</div>
+              <div class="hw-item">✓ Dedicated hardware support</div>
+            </div>
+            <div class="hw-pricing">
+              <div class="hw-option"><span class="hw-label">Pricing</span><span class="hw-price">Custom</span></div>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="margin-top:1rem;width:100%;text-align:center;display:block">Get a Quote</a>
+          </div>
+        </div>
+        <div class="hardware-fees">
+          <div class="fee-item">
+            <div class="fee-icon">🔧</div>
+            <div><strong>Installation</strong><p>$500 flat fee — we set everything up and confirm it is working before we leave.</p></div>
+          </div>
+          <div class="fee-item">
+            <div class="fee-icon">🚗</div>
+            <div><strong>On-Site Support</strong><p>$80/hr including travel time — for issues that need a hands-on visit after go-live.</p></div>
+          </div>
+          <div class="fee-item">
+            <div class="fee-icon">💳</div>
+            <div><strong>Chase Payment Integration</strong><p>Integrated payment processing — separate payment processing rates apply.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="consulting">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Consulting Services</div>
+        <h2 class="section-title">We've Been in Your Shoes.<br />Let Us Help.</h2>
+        <p class="section-sub">Our team has held virtually every role in the restaurant industry. We do not just sell software — we help you run a better restaurant.</p>
+      </div>
+      <div class="consulting-grid">
+        <div class="consulting-card">
+          <div class="consulting-icon">🖥</div>
+          <h3>POS Setup and Training</h3>
+          <p>Full system configuration, menu build-out, staff training and go-live support. We make sure your team is confident before we walk out the door.</p>
+        </div>
+        <div class="consulting-card">
+          <div class="consulting-icon">📋</div>
+          <h3>Menu Engineering</h3>
+          <p>Analyze your menu mix, identify your stars and dogs, and restructure your menu to drive higher average cheques and better margins.</p>
+        </div>
+        <div class="consulting-card">
+          <div class="consulting-icon">👥</div>
+          <h3>Labour Optimization</h3>
+          <p>Build scheduling systems that align labour cost to revenue. Understand your AGC by daypart and make staffing decisions based on data.</p>
+        </div>
+        <div class="consulting-card">
+          <div class="consulting-icon">📊</div>
+          <h3>Financial Reporting Setup</h3>
+          <p>Configure your Revenue 606, P&L accounts and reporting structure so your numbers actually tell you something useful every week.</p>
+        </div>
+        <div class="consulting-card">
+          <div class="consulting-icon">🔍</div>
+          <h3>Operations Audit</h3>
+          <p>A full review of your current operations — from ordering and receiving to labour scheduling and reporting — with a clear action plan.</p>
+        </div>
+        <div class="consulting-card">
+          <div class="consulting-icon">🤝</div>
+          <h3>Ongoing Retainer</h3>
+          <p>Monthly advisory support for operators who want a trusted partner reviewing their numbers, identifying opportunities and holding them accountable.</p>
+        </div>
+      </div>
+      <div class="consulting-cta">
+        <div class="consulting-cta-content">
+          <div class="consulting-pricing-info">
+            <div class="cp-item"><span class="cp-label">Initial Consultation</span><span class="cp-value cp-free">Free</span></div>
+            <div class="cp-divider"></div>
+            <div class="cp-item"><span class="cp-label">Additional Sessions</span><span class="cp-value">$250 flat</span></div>
+            <div class="cp-divider"></div>
+            <div class="cp-item"><span class="cp-label">Project-Based Work</span><span class="cp-value">Custom Quote</span></div>
+            <div class="cp-divider"></div>
+            <div class="cp-item"><span class="cp-label">Sales Inquiry</span><span class="cp-value cp-free">Always Free</span></div>
+          </div>
+          <div class="consulting-cta-text">
+            <h3>Not sure where to start?</h3>
+            <p>Book a free initial consultation. No pressure, no pitch — just an honest conversation about your operation and what could be better.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Book Free Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--warm" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="section-badge">Who We Are</div>
+          <h2 class="section-title">Built by Operators,<br />for Operators.</h2>
+          <p class="about-text">RestrCore was born out of frustration. Our small team brings over 20 years of combined experience across virtually every role in the restaurant industry — from bussing tables and working the line, to managing operations, scheduling staff, running the books, and being stakeholders in restaurants ourselves.</p>
+          <p class="about-text">We have used every major POS system on the market. We have fought with systems that go down during a dinner rush, paid transaction fees that did not make sense, and spent Sunday mornings manually reconciling reports that should have taken minutes.</p>
+          <p class="about-text">So we built what we always wanted — a system that actually thinks like a restaurant operator. One platform that connects every part of your business, runs locally so it is always fast, and gives you the financial visibility to make real decisions.</p>
+          <p class="about-text"><strong>Our mission is simple:</strong> support small to medium independent restaurant operators by giving them powerful tools, the knowledge to use them, and a partner who actually understands their business.</p>
+        </div>
+        <div class="about-values">
+          <div class="value-card">
+            <div class="value-icon">🍽</div>
+            <h4>Restaurant First</h4>
+            <p>Every feature we build is designed for how restaurants actually work — not adapted from retail software.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h4>Operator Partnership</h4>
+            <p>We are not just a software vendor. We are a partner invested in your success and available when you need us.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">📈</div>
+            <h4>Profitability Focused</h4>
+            <p>Every tool we build is designed to increase your profitability — not just automate tasks.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🇨🇦</div>
+            <h4>Canadian Independent</h4>
+            <p>Built specifically for the Canadian market. We understand your tax structure, your vendors and your challenges.</p>
+          </div>
+        </div>
+      </div>
+      <div class="team-section">
+        <h3 class="team-title">A Small Team. A Big Vision.</h3>
+        <p class="team-sub">We are a lean, experienced team with deep roots in the industry. As we grow, we are looking to bring on people who share our passion for restaurants and technology — implementation specialists, customer success managers, and developers who want to build something meaningful.</p>
+        <a href="#contact" class="btn btn-outline-dark">Join Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge section-badge--light">Get In Touch</div>
+        <h2 class="section-title section-title--light">Ready to Talk?</h2>
+        <p class="section-sub section-sub--light">Whether you are interested in the platform, want a free consultation, or just have questions — we would love to hear from you. No pressure, no pitch.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label>First Name</label><input type="text" placeholder="John" required /></div>
+              <div class="form-group"><label>Last Name</label><input type="text" placeholder="Smith" required /></div>
+            </div>
+            <div class="form-group"><label>Email</label><input type="email" placeholder="john@yourrestaurant.com" required /></div>
+            <div class="form-group"><label>Restaurant Name</label><input type="text" placeholder="The Maple Leaf Bistro" /></div>
+            <div class="form-group"><label>Number of Locations</label>
+              <select><option value="">Select...</option><option>1 location</option><option>2-3 locations</option><option>4-9 locations</option><option>10+ locations</option></select>
+            </div>
+            <div class="form-group"><label>I am interested in...</label>
+              <select><option value="">Select...</option><option>Early Access to RestrCore</option><option>Free Consultation</option><option>Hardware Bundle Info</option><option>Consulting Services</option><option>Just Exploring</option><option>Joining the Team</option></select>
+            </div>
+            <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Tell us a bit about your restaurant and what you are looking for..."></textarea></div>
+            <button type="submit" class="btn btn-primary btn-full btn-lg">Send Message</button>
+            <p class="form-note">We typically respond within 1 business day. Your information is never shared.</p>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <h3>What Happens Next</h3>
+            <div class="contact-step">
+              <div class="step-num">1</div>
+              <div><strong>We reach out within 24 hours</strong><p>A real person from our team — not an automated sequence.</p></div>
+            </div>
+            <div class="contact-step">
+              <div class="step-num">2</div>
+              <div><strong>Free 30-minute consultation</strong><p>We learn about your operation and answer any questions you have.</p></div>
+            </div>
+            <div class="contact-step">
+              <div class="step-num">3</div>
+              <div><strong>Custom proposal if it is a fit</strong><p>If RestrCore is right for your restaurant, we will put together a clear proposal with pricing and timeline.</p></div>
+            </div>
+          </div>
+          <div class="contact-reach">
+            <h4>Prefer to reach out directly?</h4>
+            <a href="mailto:hello@restrcore.com" class="contact-link">hello@restrcore.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo footer-logo">Restr<span>Core</span></div>
+          <p>Restaurant management, reimagined. Built by operators for operators.</p>
+          <p class="footer-note">Serving Canadian independent restaurants.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Platform</h5>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#pricing">Hardware</a>
+        </div>
+        <div class="footer-links">
+          <h5>Company</h5>
+          <a href="#about">About</a>
+          <a href="#consulting">Consulting</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h5>Get Started</h5>
+          <a href="#contact">Early Access</a>
+          <a href="#contact">Free Consultation</a>
+          <a href="#contact">Join Our Team</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 RestrCore. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
